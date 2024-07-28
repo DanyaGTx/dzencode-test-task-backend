@@ -6,10 +6,10 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors({ origin: "*" }));
 app.use('/api', productRoutes);
 app.use('/api', orderRoutes);
 
-app.use(cors({ origin: "*" }));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
