@@ -9,11 +9,15 @@ const setupSocketServer = (server) => {
 
   io.on('connection', (socket) => {
     console.log('a user connected', io.engine.clientsCount);
-
-    io.emit("activeTabs", io.engine.clientsCount);
+    setTimeout(() => {
+      io.emit("activeTabs", io.engine.clientsCount);
+    }, 100);
 
     socket.on('disconnect', () => {
-      io.emit("activeTabs", io.engine.clientsCount);
+  
+      setTimeout(() => {
+        io.emit("activeTabs", io.engine.clientsCount);
+      }, 100);
     });
   });
 
