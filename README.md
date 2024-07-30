@@ -1,24 +1,19 @@
 # Express Application
 
-## Описание
+## Description
 
-Этот проект представляет собой простое API, написанное на Node.js с использованием фреймворка Express. Приложение слушает на порту 3001 и предоставляет базовый функционал веб-сервера.
+This project is a simple API built with Node.js using the Express framework. The application listens on port 3001 and provides basic web server functionality.
 
-## Требования
 
-- Node.js >= 14.x
-- npm (или yarn)
+## Installation and Running
 
-## Установка и запуск
-
-### Локальный запуск
+### Local Development
 
 npm install
 
 npm start
 
-
-## Запуск в Docker
+## Running in Docker
 
 docker build -t dzeh-express-app .
 
