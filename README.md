@@ -8,13 +8,13 @@ This project is a simple API built with Node.js using the Express framework. The
 ## Installation and Running
 
 ### Local Development
-
+```bash
 npm install
 
 npm start
+```
 
 ## Running in Docker
-
-docker build -t dzeh-express-app .
-
-docker run -p 3001:3001 dzeh-express-app
+```bash
+docker-compose up --build
+```
